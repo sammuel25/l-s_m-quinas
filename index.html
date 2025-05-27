@@ -72,6 +72,15 @@
       color: #003366;
     }
   </style>
+  <script>
+  const docentes = document.querySelectorAll('.docente');
+  docentes.forEach(function(docente) {
+    docente.addEventListener('click', function() {
+      alert('El equipo técnico dice: Acción no Permitida');
+    });
+  });
+</script>
+
 </head>
 <body>
   <div class="mensaje">
