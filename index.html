@@ -1,43 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Página de Docentes</title>
+  <meta charset="UTF-8">
+  <title>Página de Bienvenida</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
     }
-    .nombre {
-      cursor: pointer;
-      color: blue;
-      margin: 5px 0;
+
+    .topbar {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 50px); /* Deja espacio para la barra superior */
+    }
+
+    .sidebar {
+      width: 25px; /* MÁS DELGADA */
+      background-color: #2980b9; /* Azul claro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: white;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 5px 0;
+      box-sizing: border-box;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #003366;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .student-list {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 1.6;
     }
   </style>
-  <script>
-    function mostrarMensaje() {
-      alert("Acción aún no permitida");
-    }
-  </script>
 </head>
 <body>
+  <div class="topbar">
+    ¡Reciba una cordial bienvenida a nuestra página web!
+  </div>
 
-  <h2>¡Bienvenid@ a esta página!</h2>
-  <p>Para nosotros es un honor tenerte presente. Aquí, puedes averiguar los apuntes tomados en clase...</p>
+  <div class="container">
+    <div class="sidebar">INSTITUCIÓN EDUCATIVA PLAYA RICA</div>
 
-  <h3>¡Averigua el docente, luego, busca la materia a la que quieres acceder y listo!</h3>
+    <div class="content">
+      <h2>¡Bienvenid@ a esta página!</h2>
+      <p>
+        Para nosotros es un honor tenerte presente. Aquí, puedes averiguar los apuntes tomados en clase a partir del Segundo Periodo
+        para que puedas retroalimentar tu cerebro y poner a prueba tus conocimientos de forma divertida mediante la gamificación.
+        ¡Aprender nunca fue tan entretenido!
+      </p>
+      <p><strong>¡Averigua el docente, luego, busca la materia a la que quieres acceder y listo!</strong></p>
 
-  <!-- Lista de docentes, todos con el evento de clic -->
-  <p class="nombre" onclick="mostrarMensaje()">MORENO VALENCIA JOSÉ VICTORIO</p>
-  <p class="nombre" onclick="mostrarMensaje()">VÁSQUEZ BEDOYA DORA ASTRID</p>
-  <p class="nombre" onclick="mostrarMensaje()">GONZÁLEZ SALAS ELVIA</p>
-  <p class="nombre" onclick="mostrarMensaje()">LÓPEZ MUÑOZ ALEXANDER</p>
-  <p class="nombre" onclick="mostrarMensaje()">LOAIZA GARCES MICHELL ALEJANDRA</p>
-  <p class="nombre" onclick="mostrarMensaje()">PÉREZ LONDOÑO JIMENA</p>
-  <p class="nombre" onclick="mostrarMensaje()">MANZANO VÉLEZ EVELIN XIMENA</p>
-  <p class="nombre" onclick="mostrarMensaje()">MUÑOZ GUTIÉRREZ SANDRA DIDIANNA</p>
-  <p class="nombre" onclick="mostrarMensaje()">GÓMEZ URIBE LEIDY JOHANA</p>
-  <p class="nombre" onclick="mostrarMensaje()">MESA PÉREZ EINER OSWALDO</p>
-  <p class="nombre" onclick="mostrarMensaje()">VARGAS PATIÑO LEOMAN</p>
-  <p class="nombre" onclick="mostrarMensaje()">MATOS MIELES BERCEILS</p>
-
+      <div class="student-list">
+        MORENO VALENCIA JOSÉ VICTORIO<br>
+        VÁSQUEZ BEDOYA DORA ASTRID<br>
+        GONZÁLEZ SALAS ELVIA<br>
+        LÓPEZ MUÑOZ ALEXANDER<br>
+        LOAIZA GARCES MICHELL ALEJANDRA<br>
+        PÉREZ LONDOÑO HÉINER<br>
+        MARZANO VÉLEZ EVELYN ANDREA<br>
+        MUÑOZ GUTIÉRREZ SANDRA GIOVANNA<br>
+        GÓMEZ URIBE LEIDY JOHANNA<br>
+        MESA PÉREZ ÉRIKER OSWALDO<br>
+        VARGAS PATIÑO LEONIS<br>
+        MATOS MEJÍAS BERCEILS
+      </div>
+    </div>
+  </div>
 </body>
 </html>
