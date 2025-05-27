@@ -1,115 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>¡Bienvenid@ a esta página!</title>
+  <title>Página de Docentes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
     }
-
-    #main {
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 20px;
-      color: #003366;
-    }
-
-    p {
-      font-size: 14px;
-      color: #000;
-    }
-
-    .nombre-cuadro {
-      border: 1px solid #003366;
-      background-color: #d9eaff;
-      padding: 8px 12px;
-      margin: 5px 0;
-      display: inline-block;
-      width: auto;
+    .nombre {
       cursor: pointer;
-      font-size: 15px;
-      color: #000;
-      transition: background-color 0.3s;
-    }
-
-    .nombre-cuadro:hover {
-      background-color: #aacfff;
-    }
-  </style>
-</head>
-  <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Página en construcción</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-    }
-
-    .mensaje {
-      width: 50%;
-      text-align: center;
-      padding: 30px;
-      background-color: #ffffff;
-      border: 2px solid #003366;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      font-size: 20px;
-      color: #003366;
+      color: blue;
+      margin: 5px 0;
     }
   </style>
   <script>
-  const docentes = document.querySelectorAll('.docente');
-  docentes.forEach(function(docente) {
-    docente.addEventListener('click', function() {
-      alert('El equipo técnico dice: Acción no Permitida');
-    });
-  });
-</script>
-
+    function mostrarMensaje() {
+      alert("Acción aún no permitida");
+    }
+  </script>
 </head>
 <body>
-  <div class="mensaje">
-    La página aún no está lista para su presentación.
-  </div>
-</body>
-</html>
 
-<body>
-  <div id="main">
-    <h1>¡Bienvenid@ a esta página!</h1>
-    <p>
-      Para nosotros es un honor tenerte presente. Aquí, puedes averiguar los apuntes tomados en clase a partir del Segundo Periodo para que puedas retroalimentar tu cerebro y poner a prueba tus conocimientos de forma divertida mediante la gamificación. ¡Aprender nunca fue tan entretenido!
-    </p>
-    <p><strong>¡Averigua el docente, luego, busca la materia a la que quieres acceder y listo!</strong></p>
-  </div>
-  <div>
-<span class="docente">MORENO VALENCIA JOSÉ VICTORIO</span>
-<span class="docente">VÁSQUEZ BEDOYA DORA ASTRID</span>
-<span class="docente">GONZÁLEZ SALAS ELMA</span>
-<span class="docente">LÓPEZ MUÑOZ ALEXANDER</span>
-<span class="docente">LOAIZA GARCES MICHELL ALEJANDRA</span>
-<span class="docente">PÉREZ LONDOÑO JIMENA</span> 
-<span class="docente">MANZANO VÉLEZ EVELIN XIMENA</span>
-<span class="docente">MUÑOZ GUTIERREZ SANDRA DIDIANA</span>
-<span class="docente">GÓMEZ URIBE LEIDY JOHANA</span>
-<span class="docente">MESA PÉREZ EINER OSWALDO</span>
-<span class="docente">VARGAS PATIÑO LEOMAN</span>
-<span class="docente">MATOS MIELES BERCELIS</span>   
-  </div>
+  <h2>¡Bienvenid@ a esta página!</h2>
+  <p>Para nosotros es un honor tenerte presente. Aquí, puedes averiguar los apuntes tomados en clase...</p>
+
+  <h3>¡Averigua el docente, luego, busca la materia a la que quieres acceder y listo!</h3>
+
+  <!-- Lista de docentes, todos con el evento de clic -->
+  <p class="nombre" onclick="mostrarMensaje()">MORENO VALENCIA JOSÉ VICTORIO</p>
+  <p class="nombre" onclick="mostrarMensaje()">VÁSQUEZ BEDOYA DORA ASTRID</p>
+  <p class="nombre" onclick="mostrarMensaje()">GONZÁLEZ SALAS ELVIA</p>
+  <p class="nombre" onclick="mostrarMensaje()">LÓPEZ MUÑOZ ALEXANDER</p>
+  <p class="nombre" onclick="mostrarMensaje()">LOAIZA GARCES MICHELL ALEJANDRA</p>
+  <p class="nombre" onclick="mostrarMensaje()">PÉREZ LONDOÑO JIMENA</p>
+  <p class="nombre" onclick="mostrarMensaje()">MANZANO VÉLEZ EVELIN XIMENA</p>
+  <p class="nombre" onclick="mostrarMensaje()">MUÑOZ GUTIÉRREZ SANDRA DIDIANNA</p>
+  <p class="nombre" onclick="mostrarMensaje()">GÓMEZ URIBE LEIDY JOHANA</p>
+  <p class="nombre" onclick="mostrarMensaje()">MESA PÉREZ EINER OSWALDO</p>
+  <p class="nombre" onclick="mostrarMensaje()">VARGAS PATIÑO LEOMAN</p>
+  <p class="nombre" onclick="mostrarMensaje()">MATOS MIELES BERCEILS</p>
+
 </body>
 </html>
